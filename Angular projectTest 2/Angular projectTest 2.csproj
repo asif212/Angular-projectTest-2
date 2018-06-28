@@ -102,6 +102,7 @@
     </Content>
     <Content Include="bs-config.json" />
     <Content Include="package.json" />
+    <Content Include="src\app\app.component.html" />
     <Content Include="src\tsconfig.json" />
     <Content Include="tslint.json" />
     <None Include="Web.Debug.config">
