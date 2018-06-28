@@ -103,8 +103,6 @@
     <Content Include="bs-config.json" />
     <Content Include="package.json" />
     <Content Include="src\app\app.component.html" />
-    <Content Include="src\app\employee\employee.component.css" />
-    <Content Include="src\app\employee\employee.component.html" />
     <Content Include="src\tsconfig.json" />
     <Content Include="tslint.json" />
     <None Include="Web.Debug.config">
@@ -132,7 +130,6 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
-    <TypeScriptCompile Include="src\app\employee\employee.componentnt.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 
 export class AppComponent
 {
-    pageHeader: string = "Employee details";
+    name: string = "Aquib1";
 }
