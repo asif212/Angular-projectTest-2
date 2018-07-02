@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var EmployeeDetails = /** @class */ (function () {
     function EmployeeDetails() {
+        this.colspan = 2;
         this.firstname = "asif";
         this.secondname = "moin";
         this.empno = 3202;

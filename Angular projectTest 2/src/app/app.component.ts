@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent
 {
+    imageURl: string = "Images/Logo.JPG"
     pageHeader: string = "Employee details";
+    isDisbaled: boolean = false;
 }

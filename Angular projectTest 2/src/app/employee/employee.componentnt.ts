@@ -8,6 +8,7 @@
 
 export class EmployeeDetails
 {
+    colspan: number = 2;
     firstname: string = "asif";
     secondname: string = "moin";
     empno: number = 3202;

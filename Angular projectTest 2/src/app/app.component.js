@@ -9,7 +9,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
+        this.imageURl = "Images/Logo.JPG";
         this.pageHeader = "Employee details";
+        this.isDisbaled = false;
     }
     AppComponent = __decorate([
         core_1.Component({
