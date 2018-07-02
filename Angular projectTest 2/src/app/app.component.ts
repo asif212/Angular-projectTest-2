@@ -10,4 +10,7 @@ export class AppComponent
     imageURl: string = "Images/Logo.JPG"
     pageHeader: string = "Employee details";
     isDisbaled: boolean = false;
+    classestoapply: string = 'italicClass boldClass';
+    applyboldclass: boolean = false;
+        ;
 }

@@ -4,5 +4,7 @@
     </h1>
     <img src='http://www.pragimtech.com/{{imageURl}}' />
     <my-empdetail></my-empdetail>
-    <button [disabled] = 'isDisbaled'>click me</button>
+    <button [disabled] = 'isDisbaled' [class]='classestoapply'>click me</button>
+    <br />
+    <button [disabled]='isDisbaled' [class]='classestoapply' [class.italicClass]='applyboldclass'>click me</button>
 </div>

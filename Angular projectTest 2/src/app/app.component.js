@@ -12,7 +12,10 @@ var AppComponent = /** @class */ (function () {
         this.imageURl = "Images/Logo.JPG";
         this.pageHeader = "Employee details";
         this.isDisbaled = false;
+        this.classestoapply = 'italicClass boldClass';
+        this.applyboldclass = false;
     }
+    ;
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',

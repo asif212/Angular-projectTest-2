@@ -8,6 +8,7 @@ import { EmployeeDetails } from './employee/employee.componentnt';
 @NgModule({
   imports:      [ BrowserModule ],
   declarations: [ AppComponent ,EmployeeDetails],
-  bootstrap:    [ AppComponent ]
+    bootstrap: [AppComponent]
+ 
 })
 export class AppModule { }
