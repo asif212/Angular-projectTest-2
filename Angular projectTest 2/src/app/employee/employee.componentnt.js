@@ -14,7 +14,11 @@ var EmployeeDetails = /** @class */ (function () {
         this.secondname = "moin";
         this.empno = 3202;
         this.age = 27;
+        this.showDetails = false;
     }
+    EmployeeDetails.prototype.toggleDetails = function () {
+        this.showDetails = !this.showDetails;
+    };
     EmployeeDetails = __decorate([
         core_1.Component({
             selector: 'my-empdetail',

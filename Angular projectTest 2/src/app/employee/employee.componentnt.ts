@@ -13,4 +13,10 @@ export class EmployeeDetails
     secondname: string = "moin";
     empno: number = 3202;
     age: number = 27;
+    showDetails: boolean = false;
+
+    toggleDetails(): void
+    {
+        this.showDetails = !this.showDetails;      
+    }
 }

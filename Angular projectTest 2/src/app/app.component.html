@@ -4,7 +4,20 @@
     </h1>
     <img src='http://www.pragimtech.com/{{imageURl}}' />
     <my-empdetail></my-empdetail>
-    <button [disabled] = 'isDisbaled' [class]='classestoapply'>click me</button>
-    <br />
+    <button [disabled]='isDisbaled' [class]='classestoapply'>click me</button>
+    <br /><br />
     <button [disabled]='isDisbaled' [class]='classestoapply' [class.italicClass]='applyboldclass'>click me</button>
+    <br /><br />
+    <button [disabled]='isDisbaled' [ngClass]='applyClasses()'>click me</button>
+    <br /><br />
+    <button (click)='clickMe()'>click me</button>
+    <br />
+    <br />
+    Name :  <input [value]='myname1' (input)='myname1 = $event.target.value'>
+    <br />
+    Name1 :  <input [(ngModel)]='myname1' />
+
+    <br />
+    you enetered : {{myname1}}
+
 </div>
