@@ -8,15 +8,5 @@
 
 export class EmployeeDetails
 {
-    colspan: number = 2;
-    firstname: string = "asif";
-    secondname: string = "moin";
-    empno: number = 3202;
-    age: number = 27;
-    showDetails: boolean = false;
-
-    toggleDetails(): void
-    {
-        this.showDetails = !this.showDetails;      
-    }
+   
 }

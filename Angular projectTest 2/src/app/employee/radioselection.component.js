@@ -7,17 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var EmployeeDetails = /** @class */ (function () {
-    function EmployeeDetails() {
+var radioselection = /** @class */ (function () {
+    function radioselection() {
+        this.all = 5;
+        this.male = 3;
+        this.female = 2;
     }
-    EmployeeDetails = __decorate([
+    radioselection = __decorate([
         core_1.Component({
-            selector: 'my-empdetail',
-            templateUrl: 'app/employee/employee.component.html',
-            styleUrls: ['app/employee/employee.component.css']
+            selector: 'radiobutton',
+            templateUrl: 'app/employee/radioselection.component.html',
         })
-    ], EmployeeDetails);
-    return EmployeeDetails;
+    ], radioselection);
+    return radioselection;
 }());
-exports.EmployeeDetails = EmployeeDetails;
-//# sourceMappingURL=employee.componentnt.js.map
+exports.radioselection = radioselection;
+//# sourceMappingURL=radioselection.component.js.map

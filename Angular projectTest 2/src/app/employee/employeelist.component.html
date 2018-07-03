@@ -1,4 +1,6 @@
-﻿<table>
+﻿<radiobutton></radiobutton>
+<br />
+<table>
     <thead>
         <tr>
             <td>Employee code</td>
@@ -13,19 +15,19 @@
     <tbody>
         <tr *ngFor="let employee of employees;trackBy:trackbyEmpCode" >
             <td>
-                {{employee.code | uppercase}}
+                {{employee.code }}
             </td>
             <td>
-                {{employee.name | lowercase | employeetitle:employee.gender }}
+                {{employee.name  }}
             </td>
             <td>
-                {{employee.gender | uppercase}}
+                {{employee.gender }}
             </td>
             <td>
-                {{employee.annualSalary| currency:'USD':false:'1.3-3'}}
+                {{employee.annualSalary}}
             </td>
             <td>
-                {{employee.dateOfBirth | date:'fullDate':uppercase}}
+                {{employee.dateOfBirth }}
             </td>
 
 
@@ -38,5 +40,4 @@
         
     </tbody>
 </table>
-<br />
-<button (click) ="getemployees()">Refresh list</button>
+

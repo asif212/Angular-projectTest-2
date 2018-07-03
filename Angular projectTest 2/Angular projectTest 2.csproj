@@ -107,6 +107,7 @@
     <Content Include="src\app\employee\employee.component.html" />
     <Content Include="src\app\employee\employeelist.component.css" />
     <Content Include="src\app\employee\employeelist.component.html" />
+    <Content Include="src\app\employee\radioselection.component.html" />
     <Content Include="src\tsconfig.json" />
     <Content Include="tslint.json" />
     <None Include="Web.Debug.config">
@@ -137,6 +138,7 @@
     <TypeScriptCompile Include="src\app\employee\employee.componentnt.ts" />
     <TypeScriptCompile Include="src\app\employee\employeelist.component.ts" />
     <TypeScriptCompile Include="src\app\employee\employeetitle.pipe.ts" />
+    <TypeScriptCompile Include="src\app\employee\radioselection.component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

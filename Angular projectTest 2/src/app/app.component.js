@@ -9,23 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.myname1 = "asif";
-        this.imageURl = "Images/Logo.JPG";
-        this.pageHeader = "Employee details";
-        this.isDisbaled = false;
-        this.classestoapply = 'italicClass boldClass';
-        this.applyboldclass = false;
     }
-    AppComponent.prototype.applyClasses = function () {
-        var classes = {
-            italicClass: this.isDisbaled,
-            boldClass: this.applyboldclass
-        };
-        return classes;
-    };
-    AppComponent.prototype.clickMe = function () {
-        console.log("button clicked");
-    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
