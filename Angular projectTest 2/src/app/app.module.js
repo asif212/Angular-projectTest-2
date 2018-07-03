@@ -11,13 +11,15 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var employee_componentnt_1 = require("./employee/employee.componentnt");
+var employeelist_component_1 = require("./employee/employeelist.component");
+var employeetitle_pipe_1 = require("./employee/employeetitle.pipe");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [app_component_1.AppComponent, employee_componentnt_1.EmployeeDetails],
+            declarations: [app_component_1.AppComponent, employee_componentnt_1.EmployeeDetails, employeelist_component_1.employeelist, employeetitle_pipe_1.employeetitlepipe],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
