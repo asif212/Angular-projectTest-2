@@ -1,5 +1,4 @@
 ﻿import { Component } from '@angular/core';
-
 @Component({
     selector: 'my-emplist',
     templateUrl: 'app/employee/employeelist.component.html',
@@ -8,6 +7,8 @@
 
 
 export class employeelist {
+    selectedRadioButtonValue: string = "All";
+    
     employees: any[];
     constructor() {
         this.employees =
@@ -17,7 +18,28 @@ export class employeelist {
             { code: 'emp103', name: 'Mike', gender: 'Male', annualSalary: 5900, dateOfBirth: '12/8/1979' },
             { code: 'emp104', name: 'Mary', gender: 'Female', annualSalary: 6500.826, dateOfBirth: '10/14/1980' },
             { code: 'emp105', name: 'jony', gender: 'Male', annualSalary: 6500.9588, dateOfBirth: '02/25/2010' },
+            { code: 'emp105', name: 'jony', gender: 'Female', annualSalary: 6500.9588, dateOfBirth: '02/25/2010' },
+
             ];
     }
 
+    onSelectedRadioButtonValueChanged(selectedRadioButton: string): void
+    {
+         this.selectedRadioButtonValue = selectedRadioButton;
+    }
+
+    getTotalNumberOfEmployees(): number {
+
+        return this.employees.length;
+    }
+
+    getTotalNumberOfMaleEmployees(): number {
+
+        return this.employees.filter(e => e.gender === "Male").length;
+    }
+
+    getTotalNumberOfFemaleEmployees(): number {
+
+        return this.employees.filter(e => e.gender === "Female").length;
+    }
 }

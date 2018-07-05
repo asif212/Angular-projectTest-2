@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var employeelist = /** @class */ (function () {
     function employeelist() {
+        this.selectedRadioButtonValue = "All";
         this.employees =
             [
                 { code: 'emp101', name: 'Tom', gender: 'Male', annualSalary: 5500, dateOfBirth: '06/25/1988' },
@@ -19,8 +20,21 @@ var employeelist = /** @class */ (function () {
                 { code: 'emp103', name: 'Mike', gender: 'Male', annualSalary: 5900, dateOfBirth: '12/8/1979' },
                 { code: 'emp104', name: 'Mary', gender: 'Female', annualSalary: 6500.826, dateOfBirth: '10/14/1980' },
                 { code: 'emp105', name: 'jony', gender: 'Male', annualSalary: 6500.9588, dateOfBirth: '02/25/2010' },
+                { code: 'emp105', name: 'jony', gender: 'Female', annualSalary: 6500.9588, dateOfBirth: '02/25/2010' },
             ];
     }
+    employeelist.prototype.onSelectedRadioButtonValueChanged = function (selectedRadioButton) {
+        this.selectedRadioButtonValue = selectedRadioButton;
+    };
+    employeelist.prototype.getTotalNumberOfEmployees = function () {
+        return this.employees.length;
+    };
+    employeelist.prototype.getTotalNumberOfMaleEmployees = function () {
+        return this.employees.filter(function (e) { return e.gender === "Male"; }).length;
+    };
+    employeelist.prototype.getTotalNumberOfFemaleEmployees = function () {
+        return this.employees.filter(function (e) { return e.gender === "Female"; }).length;
+    };
     employeelist = __decorate([
         core_1.Component({
             selector: 'my-emplist',

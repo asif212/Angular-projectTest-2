@@ -1,4 +1,4 @@
-﻿import {Component } from '@angular/core'
+﻿import {Component ,Input ,Output , EventEmitter} from '@angular/core'
 
 @Component({
     selector: 'radiobutton',
@@ -7,7 +7,23 @@
 })
 export class radioselection
 {
-    all: number = 5;
-    male: number = 3;
-    female: number = 2;
+    
+    selectedRadioButton: string = "All";
+    @Output()
+    onRadioButtonChangeEvent: EventEmitter<string> = new EventEmitter < string>();
+
+    @Input()
+    all: number;
+
+    @Input()
+    male: number;
+
+    @Input()
+    female: number;
+
+    onRadioButtonSelectionChange()
+    {
+        this.onRadioButtonChangeEvent.emit(this.selectedRadioButton);
+        console.log(this.selectedRadioButton);
+    }
 }
