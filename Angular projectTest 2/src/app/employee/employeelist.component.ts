@@ -1,26 +1,20 @@
 ﻿import { Component } from '@angular/core';
+import { employeeLists } from './employee.services';
+import { IEmployees } from './employees'
 @Component({
     selector: 'my-emplist',
     templateUrl: 'app/employee/employeelist.component.html',
-    styleUrls: ['app/employee/employeelist.component.css']
+    styleUrls: ['app/employee/employeelist.component.css'],
+    providers: [employeeLists]
 })
 
 
 export class employeelist {
     selectedRadioButtonValue: string = "All";
     
-    employees: any[];
-    constructor() {
-        this.employees =
-            [
-            { code: 'emp101', name: 'Tom', gender: 'Male', annualSalary: 5500, dateOfBirth: '06/25/1988' },
-            { code: 'emp102', name: 'Alex', gender: 'Male', annualSalary: 5700.95, dateOfBirth: '9/6/1982' },
-            { code: 'emp103', name: 'Mike', gender: 'Male', annualSalary: 5900, dateOfBirth: '12/8/1979' },
-            { code: 'emp104', name: 'Mary', gender: 'Female', annualSalary: 6500.826, dateOfBirth: '10/14/1980' },
-            { code: 'emp105', name: 'jony', gender: 'Male', annualSalary: 6500.9588, dateOfBirth: '02/25/2010' },
-            { code: 'emp105', name: 'jony', gender: 'Female', annualSalary: 6500.9588, dateOfBirth: '02/25/2010' },
-
-            ];
+    employees: IEmployees[];
+    constructor(private _employeeLists: employeeLists) {
+        this.employees = this._employeeLists.getEmployees();
     }
 
     onSelectedRadioButtonValueChanged(selectedRadioButton: string): void

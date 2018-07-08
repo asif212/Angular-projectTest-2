@@ -10,18 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var employee_services_1 = require("./employee.services");
 var employeelist = /** @class */ (function () {
-    function employeelist() {
+    function employeelist(_employeeLists) {
+        this._employeeLists = _employeeLists;
         this.selectedRadioButtonValue = "All";
-        this.employees =
-            [
-                { code: 'emp101', name: 'Tom', gender: 'Male', annualSalary: 5500, dateOfBirth: '06/25/1988' },
-                { code: 'emp102', name: 'Alex', gender: 'Male', annualSalary: 5700.95, dateOfBirth: '9/6/1982' },
-                { code: 'emp103', name: 'Mike', gender: 'Male', annualSalary: 5900, dateOfBirth: '12/8/1979' },
-                { code: 'emp104', name: 'Mary', gender: 'Female', annualSalary: 6500.826, dateOfBirth: '10/14/1980' },
-                { code: 'emp105', name: 'jony', gender: 'Male', annualSalary: 6500.9588, dateOfBirth: '02/25/2010' },
-                { code: 'emp105', name: 'jony', gender: 'Female', annualSalary: 6500.9588, dateOfBirth: '02/25/2010' },
-            ];
+        this.employees = this._employeeLists.getEmployees();
     }
     employeelist.prototype.onSelectedRadioButtonValueChanged = function (selectedRadioButton) {
         this.selectedRadioButtonValue = selectedRadioButton;
@@ -39,9 +33,10 @@ var employeelist = /** @class */ (function () {
         core_1.Component({
             selector: 'my-emplist',
             templateUrl: 'app/employee/employeelist.component.html',
-            styleUrls: ['app/employee/employeelist.component.css']
+            styleUrls: ['app/employee/employeelist.component.css'],
+            providers: [employee_services_1.employeeLists]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [employee_services_1.employeeLists])
     ], employeelist);
     return employeelist;
 }());
