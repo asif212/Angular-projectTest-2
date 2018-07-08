@@ -1,4 +1,4 @@
-﻿<radiobutton
+﻿<radiobutton *ngIf="employees"
              [all] = "getTotalNumberOfEmployees()"
              [male] ="getTotalNumberOfMaleEmployees()"
              [female] ="getTotalNumberOfFemaleEmployees()"
@@ -39,8 +39,13 @@
 
 
             </tr>
+            
         </ng-container>
-        <tr *ngIf="!employees || employees.length ==0">
+        <tr *ngIf="!employees ">
+            <td colspan="5">Loading Data. Please wait...</td>
+
+        </tr>
+        <tr *ngIf="employees && employees.length ==0">
             <td colspan="5">no data found</td>
 
         </tr>

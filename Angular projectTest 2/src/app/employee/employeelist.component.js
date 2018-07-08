@@ -13,9 +13,10 @@ var core_1 = require("@angular/core");
 var employee_services_1 = require("./employee.services");
 var employeelist = /** @class */ (function () {
     function employeelist(_employeeLists) {
+        var _this = this;
         this._employeeLists = _employeeLists;
         this.selectedRadioButtonValue = "All";
-        this.employees = this._employeeLists.getEmployees();
+        this._employeeLists.getEmployees().subscribe(function (employeeData) { return _this.employees = employeeData; });
     }
     employeelist.prototype.onSelectedRadioButtonValueChanged = function (selectedRadioButton) {
         this.selectedRadioButtonValue = selectedRadioButton;

@@ -14,7 +14,7 @@ export class employeelist {
     
     employees: IEmployees[];
     constructor(private _employeeLists: employeeLists) {
-        this.employees = this._employeeLists.getEmployees();
+        this._employeeLists.getEmployees().subscribe((employeeData) => this.employees = employeeData);
     }
 
     onSelectedRadioButtonValueChanged(selectedRadioButton: string): void

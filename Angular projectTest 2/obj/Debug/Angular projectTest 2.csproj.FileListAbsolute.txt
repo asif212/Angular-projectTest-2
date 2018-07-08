@@ -31,7 +31,6 @@ c:\users\asif\documents\visual studio 2015\Projects\Angular projectTest 2\Angula
 c:\users\asif\documents\visual studio 2015\Projects\Angular projectTest 2\Angular projectTest 2\obj\Debug\Angular projectTest 2.dll
 c:\users\asif\documents\visual studio 2015\Projects\Angular projectTest 2\Angular projectTest 2\obj\Debug\Angular projectTest 2.pdb
 C:\Users\ASIF\Documents\Visual Studio 2015\Projects\Angular projectTest 2\Angular projectTest 2\obj\Debug\Angular projectTest 2.csprojResolveAssemblyReference.cache
-C:\Users\ASIF\Documents\GitHub\Angular-projectTest-2\Angular projectTest 2\obj\Debug\Angular projectTest 2.csprojResolveAssemblyReference.cache
 C:\Users\ASIF\Documents\GitHub\Angular-projectTest-2\Angular projectTest 2\obj\Debug\Angular projectTest 2.dll
 C:\Users\ASIF\Documents\GitHub\Angular-projectTest-2\Angular projectTest 2\obj\Debug\Angular projectTest 2.pdb
 C:\Users\ASIF\Documents\GitHub\Angular-projectTest-2\Angular projectTest 2\bin\ApplicationInsights.config
